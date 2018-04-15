@@ -1,0 +1,69 @@
+---
+layout: post
+title: Week 1 at Metis - Project Benson
+---
+
+### Looking Back on My First Week at Metis
+
+##### April 9, 2018
+ 
+Hi everyone! I have just completed my first week at the Metis Data Science Bootcamp in New York. I wanted to take some 
+time to reflect on my experience and write about our first project. 
+
+The first week of the program was exciting and a bit overwhelming. There was a ton of information being thrown our way,
+plenty of new faces to meet, and a new schedule and space to get accustomed to. However, here I am posting about it so
+I'd say it was a success. 
+
+The first project, known as Project Benson, was a team project and I worked with three of my fellow students. We were
+given a business task in which an organization known as WomenTechWomenYes (WTWY) needed help leveraging data in order 
+to find the best subway stations in the city to place their street teams. The street teams would attempt to gather 
+signatures and emails from individuals interested in attending and supporting WTWY's summer gala, particularly women working in the technology sector. 
+We were given extensive [MTA Turnstile Data](http://web.mta.info/developers/turnstile.html) for our exploration and analysis. My group also 
+decided to use [NYC Census Data](https://www.kaggle.com/muonneutrino/new-york-city-census-data/data) to aid in our 
+investigation.   
+
+![manhattan subway map](https://pixel.nymag.com/imgs/daily/intelligencer/2016/05/26/26-subway-map-1.nocrop.w536.h2147483647.jpg "Manhattan Subway Map")
+
+#### *Data Collection and Preprocessing*
+
+After importing six weeks of data from the MTA's website, we were ready to get going. Each dataset
+includes turnstile entry and exit counts collected every four hours for one week. This consists of
+every single turnstile grouped into various C/A (Control Areas) and UNIT (Remote units for subway stations).
+The data also lists the actual station names, lines that the station serves, and the exact date and 
+time of collection.
+
+The first issue we ran into is the fact that the data gave us the cumulative counts of the turnstile
+entries and exits. We needed to get the noncumulative counts in order to break down our analysis further
+by Unit, Station, C/A, time of day, day of week, etc. This was achieved using
+ [Pandas](https://pandas.pydata.org/pandas-docs/stable/), the powerful data analysis package for 
+Python. We also found it useful to throw out any major outliers that might have skewed our analysis.
+Any turnstile that happened to have over 14,000 entries or exits per four hour period (that is approximately 1 swipe 
+per second), was discarded from our dataset.
+
+#### *Results*
+
+The first figure shows the top ten subway stations by average foot traffic. This was calculated by 
+taking the average of the sum of the entries and sum of the exits for each station.
+![avg_foot_traffic](https://github.com/jnlevine23/jnlevine23.github.io/blob/master/images/avg_foot_traffic.png?raw=true)
+
+The six plots below show total entries at the WallST 4, 5 station on a daily basis over the span 
+of six weeks. 
+![wall_st](https://github.com/jnlevine23/jnlevine23.github.io/blob/master/images/wallst.png?raw=true)    
+
+It is interesting to note the dips in traffic on the weekends and certain Wednesdays. Thursday 
+universally seems to be the day of the week with the highest amount of turnstile entries, at least at
+the Wall ST. subway stop. Fridays also seem to be a lighter day compared to the rest of the work week.
+
+Figure 1 clearly shows the major hubs of New York City and which stations get the most foot traffic 
+overall. It would likely be beneficial to place street teams at some of these hubs on busier days 
+of the week. 
+
+Further analysis led our team to binning the data into four hour intervals throughout the day and finding 
+out which time periods were the busiest at the hubs. We also brought in the NYC Census Data to find out 
+which areas of the city women in technology were likely to be living in. By finding out which 
+neighborhoods these women reside in and which major subway stations they were likely to pass through on 
+a daily basis, our group was able to come to a better conclusion about the optimal placement of the 
+street teams.   
+
+##### Tools Used
+`Python`, `Pandas`, `Matplotlib` & `Seaborn` for Visualization
