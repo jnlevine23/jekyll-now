@@ -1,0 +1,20 @@
+### Looking Back on My First Week at Metis 
+
+Hi everyone! I have just completed my first week at the Metis Data Science Bootcamp in New York. I wanted to take some 
+time to reflect on my experience and write about our first project. 
+
+The first week of the program was exciting and a bit overwhelming. There was a ton of information being thrown our way,
+plenty of new faces to meet, and a new schedule and space to get accustomed to. However, here I am posting about it so
+I'd say it was a success. 
+
+The first project, known as Project Benson, was a team project and I worked with three of my fellow students. We were
+given a business task in which an organization known as WomenTechWomenYes (WTWY) needed help leveraging data in order 
+to find the best subway stations in the city to place their street teams. The street teams would attempt to gather 
+signatures and emails from individuals interested in attending and supporting WTWY's summer gala. We were given extensive
+[MTA Turnstile Data](http://web.mta.info/developers/turnstile.html) for our exploration and analysis. My group also 
+decided to use [NYC Census Data](https://www.kaggle.com/muonneutrino/new-york-city-census-data/data) to aid in our 
+investigation.   
+
+![manhattan subway map](https://pixel.nymag.com/imgs/daily/intelligencer/2016/05/26/26-subway-map-1.nocrop.w536.h2147483647.jpg "Manhattan Subway Map")
+
+
