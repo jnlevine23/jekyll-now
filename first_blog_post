@@ -12,8 +12,8 @@ I'd say it was a success.
 The first project, known as Project Benson, was a team project and I worked with three of my fellow students. We were
 given a business task in which an organization known as WomenTechWomenYes (WTWY) needed help leveraging data in order 
 to find the best subway stations in the city to place their street teams. The street teams would attempt to gather 
-signatures and emails from individuals interested in attending and supporting WTWY's summer gala. We were given extensive
-[MTA Turnstile Data](http://web.mta.info/developers/turnstile.html) for our exploration and analysis. My group also 
+signatures and emails from individuals interested in attending and supporting WTWY's summer gala, particularly women working in the technology sector. 
+We were given extensive [MTA Turnstile Data](http://web.mta.info/developers/turnstile.html) for our exploration and analysis. My group also 
 decided to use [NYC Census Data](https://www.kaggle.com/muonneutrino/new-york-city-census-data/data) to aid in our 
 investigation.   
 
@@ -23,7 +23,7 @@ investigation.
 
 After importing six weeks of data from the MTA's website, we were ready to get going. Each dataset
 includes turnstile entry and exit counts collected every four hours for one week. This consists of
-every single turnstile grouped into various C/A (Control Areas) and UNIT (Remote units for subway station).
+every single turnstile grouped into various C/A (Control Areas) and UNIT (Remote units for subway stations).
 The data also lists the actual station names, lines that the station serves, and the exact date and 
 time of collection.
 
@@ -31,8 +31,8 @@ The first issue we ran into is the fact that the data gave us the cumulative cou
 entries and exits. We needed to get the noncumulative counts in order to break down our analysis further
 by Unit, Station, C/A, time of day, day of week, etc. This was achieved using
  [Pandas](https://pandas.pydata.org/pandas-docs/stable/), the powerful data analysis package for 
-Python. We also found it useful to throw out any major outliers that may skew our analysis.
-Any turnstile that happened to have over 14,000 entries or exits per four-hour period (that is approximately 1 swipe 
+Python. We also found it useful to throw out any major outliers that might have skewed our analysis.
+Any turnstile that happened to have over 14,000 entries or exits per four hour period (that is approximately 1 swipe 
 per second), was discarded from our dataset.
 
 #### *Results*
@@ -56,7 +56,7 @@ of the week.
 Further analysis led our team to binning the data into four hour intervals throughout the day and finding 
 out which time periods were the busiest at the hubs. We also brought in the NYC Census Data to find out 
 which areas of the city women in technology were likely to be living in. By finding out which 
-neighborhoods these women reside in and which major subway stations they are likely to pass through on 
+neighborhoods these women reside in and which major subway stations they were likely to pass through on 
 a daily basis, our group was able to come to a better conclusion about the optimal placement of the 
 street teams.   
 
