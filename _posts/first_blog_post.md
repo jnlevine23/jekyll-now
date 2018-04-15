@@ -65,7 +65,9 @@ out which time periods were the busiest at the hubs. We also brought in the NYC 
 which areas of the city women in technology were likely to be living in. By finding out which 
 neighborhoods these women reside in and which major subway stations they were likely to pass through on 
 a daily basis, our group was able to come to a better conclusion about the optimal placement of the 
-street teams.   
+street teams.
+
+##### TODO - add in Jupyter notebooks for challenge set 1 and finished project notebook with links.    
 
 ##### Tools Used
 `Python`, `Pandas`, `Matplotlib` & `Seaborn` for Visualization
