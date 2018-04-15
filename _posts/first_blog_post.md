@@ -44,10 +44,12 @@ per second), was discarded from our dataset.
 
 The first figure shows the top ten subway stations by average foot traffic. This was calculated by 
 taking the average of the sum of the entries and sum of the exits for each station.
+
 ![avg_foot_traffic](https://github.com/jnlevine23/jnlevine23.github.io/blob/master/images/avg_foot_traffic.png?raw=true)
 
 The six plots below show total entries at the WallST 4, 5 station on a daily basis over the span 
-of six weeks. 
+of six weeks.
+ 
 ![wall_st](https://github.com/jnlevine23/jnlevine23.github.io/blob/master/images/wallst.png?raw=true)    
 
 It is interesting to note the dips in traffic on the weekends and certain Wednesdays. Thursday 
